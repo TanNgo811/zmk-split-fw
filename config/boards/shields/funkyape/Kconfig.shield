@@ -1,0 +1,5 @@
+config SHIELD_FUNKYAPE_LEFT
+    def_bool $(shields_list_contains,funkyape_left)
+
+config SHIELD_FUNKYAPE_RIGHT
+    def_bool $(shields_list_contains,funkyape_right)

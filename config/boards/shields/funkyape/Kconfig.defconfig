@@ -1,0 +1,25 @@
+if SHIELD_FUNKYAPE_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "FunkyApeL"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+
+if SHIELD_FUNKYAPE_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "FunkyApeR"
+
+endif
+
+
+if SHIELD_FUNKYAPE_LEFT || SHIELD_FUNKYAPE_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
